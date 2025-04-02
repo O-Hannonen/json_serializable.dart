@@ -179,7 +179,7 @@ mixin DecodeHelper implements HelperCore {
       ..writeAll(implementations.map(buildSingleImpl), '\n')
       ..writeln(
         '''
-_ => throw UnrerecognizedUnionTypeException(
+_ => throw UnrecognizedUnionTypeException(
   '\${json['$discriminator']}', 
   ${element.name},
   json,
