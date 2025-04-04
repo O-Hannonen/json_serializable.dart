@@ -183,7 +183,7 @@ Iterable<ClassElement> sealedClassImplementations(
         );
   }
 
-  return [];
+  return const Iterable<ClassElement>.empty();
 }
 
 /// If [targetType] is an enum, returns the [FieldElement] instances associated
